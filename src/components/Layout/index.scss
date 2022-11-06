@@ -1,0 +1,26 @@
+@mixin common-font-style {
+  font: {
+    size: 20px;
+    weight: bolder;
+  }
+
+  color: purple;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+
+  .common,
+  h1 {
+    @include common-font-style;
+  }
+
+  .common {
+    border: 1px solid gainsboro;
+  }
+
+  .welcome {
+    color: pink
+  }
+}

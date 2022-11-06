@@ -1,14 +1,13 @@
-import React from 'react';
+import { FC, StrictMode } from 'react';
 
-import Demo from './components/Demo';
+import Layout from './components/Layout';
 
 import './App.scss';
 
-const App: React.FC = () => (
-  <>
-    <div className="hello">Hello World!</div>
-    <div><Demo welcome="welcome to my channel!" /></div>
-  </>
+const App: FC = () => (
+  <StrictMode>
+    <Layout welcome="welcome to my channel!" />
+  </StrictMode>
 );
 
 export default App;
