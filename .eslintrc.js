@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks'],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', "plugin:react/jsx-runtime"],
   overrides: [
   ],
   parserOptions: {
