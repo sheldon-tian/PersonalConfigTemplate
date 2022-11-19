@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', "plugin:react/jsx-runtime"],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'plugin:react/jsx-runtime'],
   overrides: [
   ],
   parserOptions: {
@@ -23,5 +23,14 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'no-param-reassign': ['error', {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state',
+      ]
+    }],
+    'react/jsx-props-no-spreading': ['error', {
+      'custom': 'ignore'
+    }],
   },
 };
